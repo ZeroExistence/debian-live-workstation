@@ -1,0 +1,6 @@
+prod.local:/var/lib/containers/storage/volumes /volumes nfs4 rw,noauto,sync,fsc 0 0
+prod.local:/stor1 /stor1 nfs4 rw,noauto,sync,fsc 0 0
+prod.local:/pstor1 /pstor1 nfs4 rw,noauto,sync,fsc 0 0
+/dev/zeroexistence-ext/files /data/files ext4 defaults,noauto 0 0
+/dev/zeroexistence-ext/animes /data/animes ext4 defaults,noauto 0 0
+/dev/zeroexistence-ext/temp /data/temp ext4 defaults,noauto 0 0
