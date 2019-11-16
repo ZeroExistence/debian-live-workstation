@@ -54,3 +54,4 @@ ntfs-3g
 exfat-fuse
 exfat-utils
 xfsprogs
+resolvconf

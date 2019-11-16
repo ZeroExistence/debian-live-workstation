@@ -1,5 +1,5 @@
 # debian-live-workstation
-This repository is used to create a live build of Debian Buster. The main use of this is to burn an image to Flashdrive, and use it as workstation.
+This repository is used to create a live build of Debian Bullseye. The main use of this is to burn an image to flash drive, and use it as workstation.
 
 # Specification:
 - Debian Version: Bullseye
@@ -20,6 +20,11 @@ buildah bud -f Dockerfile -t debian-live .
 podman run -ti --privileged --name debian-live -v vdebian:/app:exec,dev debian-live
 ```
 3. Go to /app directory. Clone this repository, and go inside the repository's directory.
+```
+cd /app;
+git clone https://github.com/ZeroExistence/debian-live-workstation.git;
+cd debian-live-workstation
+```
 4. Run the live build command.
 ```
 lb build
