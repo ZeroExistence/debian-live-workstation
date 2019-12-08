@@ -11,8 +11,6 @@ jq
 inkscape
 syncthing
 libreoffice
-qemu-kvm
-git
 keepassx
 krita
 shotwell
@@ -34,3 +32,12 @@ gnuradio
 hamradio-sdr
 rtl-sdr
 airspy
+youtube-dl
+flashrom
+libappindicator1
+libc++1
+gimagereader
+tesseract-ocr
+tesseract-ocr-jpn
+tesseract-ocr-jpn-vert
+gqrx-sdr

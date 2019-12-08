@@ -19,6 +19,7 @@ libblockdev-lvm2
 mate-desktop-environment
 mate-utils
 mate-media
+mate-calc
 pulseaudio
 atril
 xserver-xorg-video-radeon
@@ -55,3 +56,11 @@ exfat-fuse
 exfat-utils
 xfsprogs
 resolvconf
+libdevmapper-dev
+qemu-kvm
+libvirt-clients
+libvirt-daemon-system
+virt-manager
+dnsmasq
+spice-client-gtk
+git

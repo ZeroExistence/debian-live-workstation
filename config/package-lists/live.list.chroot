@@ -3,3 +3,6 @@ live-config
 live-config-systemd
 live-boot-initramfs-tools
 live-tools
+live-task-recommended
+live-task-standard
+live-task-extra

@@ -4,10 +4,10 @@ set -e
 
 #Python related stuffs
 python3 -m pip search ansible;
-python3 -m pip install --no-cache-dir ansible pipenv Django django-versatileimagefield django-extensions djangorestframework django-filter pandas numpy requests[socks] graphene-django wagtail jupyter matplotlib;
+python3 -m pip install --no-cache-dir ansible pipenv 'Django<3,>=2.0' django-versatileimagefield django-extensions djangorestframework django-filter pandas numpy requests[socks] graphene-django wagtail jupyter matplotlib;
 
 #Atom
-wget -O /tmp/atom-amd64.deb https://atom.io/download/deb && dpkg -i /tmp/atom-amd64.deb;
+wget -O /tmp/atom-amd64.deb 'https://atom.io/download/deb' && dpkg -i /tmp/atom-amd64.deb;
 
 #Docker
 curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - ;
@@ -23,9 +23,8 @@ wget -O /tmp/LanguageTool-4.6.oxt "https://languagetool.org/download/LanguageToo
 #apt-get install libgl1-mesa-dri:i386 libgl1-mesa-glx:i386 libc6:i386 python-apt xterm;
 #wget -O /tmp/steam.deb https://steamcdn-a.akamaihd.net/client/installer/steam.deb && dpkg -i /tmp/steam.deb;
 
-#Custom packages installation
-curl -fsSL https://download.opensuse.org/repositories/home:selmf/Debian_9.0/Release.key | apt-key add - ;
-add-apt-repository "deb http://download.opensuse.org/repositories/home:/selmf/Debian_9.0/ /";
-apt-get update;
-#Yacreader
-apt-get install --no-install-recommends -y yacreader;
+#Discord Installer
+wget -O /tmp/discord.deb 'https://discordapp.com/api/download?platform=linux&format=deb' && dpkg -i /tmp/discord.deb;
+
+#DBeaver Installer
+wget -O /tmp/dbeaver-ce_latest_amd64.deb 'https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb' && dpkg -i /tmp/dbeaver-ce_latest_amd64.deb;
