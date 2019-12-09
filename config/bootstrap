@@ -1,8 +1,8 @@
 # config/bootstrap - options for live-build(7), bootstrap stage
 
 # $LB_DISTRIBUTION: select distribution to use
-# (Default: bullseye)
-LB_DISTRIBUTION="bullseye"
+# (Default: buster)
+LB_DISTRIBUTION="buster"
 
 # $LB_PARENT_DISTRIBUTION: select parent distribution to use
 # (Default: buster)

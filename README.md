@@ -1,13 +1,13 @@
 # debian-live-workstation
-This repository is used to create a live build of Debian Bullseye. The main use of this is to burn an image to flash drive, and use it as workstation.
+This repository is used to create a live build of Debian Buster. The main use of this is to burn an image to flash drive, and use it as workstation.
 
 # Specification:
-- Debian Version: Bullseye
+- Debian Version: Buster
 - Desktop Environment: Mate
 - Window Manager: i3
 - Build: Minimal (disabled installation of additional packages recommended by apt)
-- Included Packages: Graphics, Browsers, LibreOffice, Programming Tools
-- Persistence: Active with LUKS encryption (work in progress)
+- Included Packages: Graphics, Browsers, LibreOffice, Programming Tools, Virtualization Tools (KVM with libvirtd, virt-manager as GUI), Docker-CE, Discord, Tessaract OCR Tool
+- Persistence: Active with LUKS encryption
 - Estimated Image Size: ~2.5GB
 
 # Building
