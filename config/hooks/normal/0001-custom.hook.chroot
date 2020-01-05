@@ -2,9 +2,21 @@
 
 set -e
 
+#Fluxion Installation
+git clone 'https://www.github.com/FluxionNetwork/fluxion.git' /opt/fluxion;
+
 #Python related stuffs
 python3 -m pip search ansible;
-python3 -m pip install --no-cache-dir ansible pipenv 'Django<3,>=2.0' django-versatileimagefield django-extensions djangorestframework django-filter pandas numpy requests[socks] graphene-django wagtail jupyter matplotlib;
+python3 -m pip install --no-cache-dir wheel ansible pipenv 'Django<2.3,>=2.0' django-versatileimagefield django-extensions djangorestframework django-filter pandas numpy requests[socks] graphene-django wagtail jupyter matplotlib s3cmd Flask;
+
+#Metasploit Installation
+curl 'https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb' > /var/cache/msfinstall && chmod 755 /var/cache/msfinstall && /var/cache/msfinstall;
+
+#SET Installation
+git clone 'https://github.com/trustedsec/social-engineer-toolkit/' /opt/set/ && cd /opt/set && sed -i 's/pymssql/pymssql<3.0/g' requirements.txt && pip3 install -r requirements.txt;
+
+#Maltego Installation
+wget -O /tmp/maltego.deb 'https://www.paterva.com/malv428/Maltego.v4.2.8.12786.deb' && dpkg -i /tmp/maltego.deb;
 
 #Atom
 wget -O /tmp/atom-amd64.deb 'https://atom.io/download/deb' && dpkg -i /tmp/atom-amd64.deb;
