@@ -69,6 +69,7 @@ spice-client-gtk
 git
 python3-dev
 iftop
+iotop
 kpartx
 eject
 wpasupplicant

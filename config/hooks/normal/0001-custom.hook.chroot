@@ -7,7 +7,7 @@ git clone 'https://www.github.com/FluxionNetwork/fluxion.git' /opt/fluxion;
 
 #Python related stuffs
 python3 -m pip search ansible;
-python3 -m pip install --no-cache-dir wheel ansible pipenv 'Django<2.3,>=2.0' django-versatileimagefield django-extensions djangorestframework django-filter pandas numpy requests[socks] graphene-django wagtail jupyter matplotlib s3cmd Flask;
+python3 -m pip install --no-cache-dir setuptools wheel ansible pipenv Django psycopg2-binary django-versatileimagefield django-extensions djangorestframework django-filter pandas numpy requests[socks] graphene-django wagtail jupyter matplotlib s3cmd Flask python-gammu pyserial;
 
 #Metasploit Installation
 curl 'https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb' > /var/cache/msfinstall && chmod 755 /var/cache/msfinstall && /var/cache/msfinstall;
@@ -36,7 +36,7 @@ wget -O /tmp/LanguageTool-4.6.oxt "https://languagetool.org/download/LanguageToo
 #wget -O /tmp/steam.deb https://steamcdn-a.akamaihd.net/client/installer/steam.deb && dpkg -i /tmp/steam.deb;
 
 #Discord Installer
-wget -O /tmp/discord.deb 'https://discordapp.com/api/download?platform=linux&format=deb' && dpkg -i /tmp/discord.deb;
+#wget -O /tmp/discord.deb 'https://discordapp.com/api/download?platform=linux&format=deb' && dpkg -i /tmp/discord.deb;
 
 #DBeaver Installer
 wget -O /tmp/dbeaver-ce_latest_amd64.deb 'https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb' && dpkg -i /tmp/dbeaver-ce_latest_amd64.deb;

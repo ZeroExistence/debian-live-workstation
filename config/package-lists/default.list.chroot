@@ -41,6 +41,8 @@ gimagereader
 tesseract-ocr
 tesseract-ocr-jpn
 tesseract-ocr-jpn-vert
+tesseract-ocr-script-jpan
+tesseract-ocr-script-jpan-vert
 gqrx-sdr
 postgresql
 wireshark-qt
@@ -77,3 +79,6 @@ redis
 rabbitmq-server
 arduino
 geda
+gammu
+gammu-smsd
+libgammu-dev
