@@ -21,22 +21,12 @@ wget -O /tmp/maltego.deb 'https://www.paterva.com/malv428/Maltego.v4.2.8.12786.d
 #Atom
 wget -O /tmp/atom-amd64.deb 'https://atom.io/download/deb' && dpkg -i /tmp/atom-amd64.deb;
 
-#Docker
-#curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - ;
-#add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable";
-#apt-get update;
-#Docker
-#apt-get install --no-install-recommends -y docker-ce docker-ce-cli containerd.io;
-
 #Libreoffice extensions
 wget -O /tmp/LanguageTool-4.6.oxt "https://languagetool.org/download/LanguageTool-4.6.oxt" && unopkg add -s --shared /tmp/LanguageTool-4.6.oxt;
 
 #Steam Stuffs
 #apt-get install libgl1-mesa-dri:i386 libgl1-mesa-glx:i386 libc6:i386 python-apt xterm;
 #wget -O /tmp/steam.deb https://steamcdn-a.akamaihd.net/client/installer/steam.deb && dpkg -i /tmp/steam.deb;
-
-#Discord Installer
-#wget -O /tmp/discord.deb 'https://discordapp.com/api/download?platform=linux&format=deb' && dpkg -i /tmp/discord.deb;
 
 #DBeaver Installer
 wget -O /tmp/dbeaver-ce_latest_amd64.deb 'https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb' && dpkg -i /tmp/dbeaver-ce_latest_amd64.deb;
