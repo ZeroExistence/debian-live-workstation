@@ -22,7 +22,7 @@ wget -O /tmp/maltego.deb 'https://www.paterva.com/malv428/Maltego.v4.2.8.12786.d
 wget -O /tmp/atom-amd64.deb 'https://atom.io/download/deb' && dpkg -i /tmp/atom-amd64.deb;
 
 #Libreoffice extensions
-wget -O /tmp/LanguageTool-4.6.oxt "https://languagetool.org/download/LanguageTool-4.6.oxt" && unopkg add -s --shared /tmp/LanguageTool-4.6.oxt;
+wget -O /tmp/LanguageTool-4.oxt "https://languagetool.org/download/LanguageTool-4.8.oxt" && unopkg add -s --shared /tmp/LanguageTool-4.oxt;
 
 #Steam Stuffs
 #apt-get install libgl1-mesa-dri:i386 libgl1-mesa-glx:i386 libc6:i386 python-apt xterm;
