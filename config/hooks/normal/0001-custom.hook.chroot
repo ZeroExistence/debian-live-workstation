@@ -24,9 +24,14 @@ wget -O /tmp/atom-amd64.deb 'https://atom.io/download/deb' && dpkg -i /tmp/atom-
 #Libreoffice extensions
 wget -O /tmp/LanguageTool-4.oxt "https://languagetool.org/download/LanguageTool-4.8.oxt" && unopkg add -s --shared /tmp/LanguageTool-4.oxt;
 
-#Steam Stuffs
-#apt-get install libgl1-mesa-dri:i386 libgl1-mesa-glx:i386 libc6:i386 python-apt xterm;
-#wget -O /tmp/steam.deb https://steamcdn-a.akamaihd.net/client/installer/steam.deb && dpkg -i /tmp/steam.deb;
-
 #DBeaver Installer
 wget -O /tmp/dbeaver-ce_latest_amd64.deb 'https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb' && dpkg -i /tmp/dbeaver-ce_latest_amd64.deb;
+
+#Discord Installer
+wget -O /tmp/discord.deb 'https://discordapp.com/api/download?platform=linux&format=deb' && dpkg -i /tmp/discord.deb;
+
+#Steam Stuffs
+echo steam steam/question select "I AGREE" | sudo debconf-set-selections;
+echo steam steam/license note '' | sudo debconf-set-selections;
+dpkg --add-architecture i386 && apt-get update;
+apt-get install -y steam;
